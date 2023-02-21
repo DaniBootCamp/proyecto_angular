@@ -1,0 +1,31 @@
+<br>
+<form >
+
+  <div >
+    <label for="idInput">ID</label>
+    <input name="idInput" id="idInput" placeholder="Enter ID" [(ngModel)]="data.id">
+  </div>
+
+  <div >
+    <label for="nameInput">Name</label>
+    <input type="text" name="nameInput" id="nameInput" placeholder="Enter Name" [(ngModel)]="data.name">
+  </div>
+
+  <div >
+    <label for="symbolInput">Symbol</label>
+    <input type="text" name="symbolInput" id="symbolInput" placeholder="Enter Symbol" [(ngModel)]="data.symbol">
+  </div>
+
+  <div>
+    <label for="rankInput">Rank</label>
+    <input type="number"  name="rankInput" id="rankInput"  placeholder="Enter rank or leave it empty" [(ngModel)]="data.rank">
+  </div>
+
+  <div>
+    <label for="priceInput">Price</label>
+    <input type="number" name="priceInput" id="priceInput"  placeholder="Enter Price" [(ngModel)]="data.price">
+  </div>
+
+  <button routerLink="/List" type="submit" (click)="save()">Add new</button>
+</form>
+

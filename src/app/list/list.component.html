@@ -1,0 +1,23 @@
+<div>
+  <table>
+      <thead>
+          <th>Rank</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Price - EUR</th>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let temp of service.data">
+            <td>{{temp.rank}}  <img class="iconos" src={{temp.icon}} /></td>
+              <td>{{temp.id}}</td>
+              <td>{{temp.name}}</td>
+              <td>{{temp.symbol}}</td>
+              <td>{{temp.price}}</td>
+              <td><button routerLink="/Edit"  (click)="service.transporter(temp)">Edit</button></td>
+              <td><button (click)="delete(temp)">Delete</button></td>
+          </tr>
+      </tbody>
+  </table>
+  <router-outlet></router-outlet>
+</div>

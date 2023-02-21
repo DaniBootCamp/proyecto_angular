@@ -1,0 +1,24 @@
+<nav>
+  <a routerLink="List">Cryptocurrency Rate</a>
+  <span></span>
+  <a routerLink="About">About</a>
+
+  <div>
+    <ul>
+      <li>
+        <a routerLink="Add">Add new<span></span></a>
+      </li>
+
+      <li>
+      </li>
+
+      <li>
+        <a href="javascript:void(0);" (click)="logOut()">Logout<span></span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

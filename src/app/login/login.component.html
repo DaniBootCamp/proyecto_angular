@@ -1,0 +1,15 @@
+<br>
+<form>
+  <div>
+    <label >Username: </label>
+    <input  type="text" #user id="user" name="user" placeholder="Username"/>
+  </div>
+
+  <div>
+    <label style="font-weight: bold">Password: </label>
+    <input  id="pass" name="pass" #pass type="password" placeholder="Password"/>
+  </div>
+
+  <input id="login" type="button" (click)="Login(user.value, pass.value)" value="Login" />
+</form>
+
